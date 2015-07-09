@@ -101,7 +101,7 @@ class arSearchResultExportCsvJob extends arBaseJob
       $this->search->queryBool->addMust($criterias);
     }
 
-    // Add criteria fo secondary search fields
+    // Add criteria for secondary search fields
     foreach (SearchAdvancedAction::$NAMES as $name)
     {
       if (!empty($this->searchParams[$name])
@@ -109,6 +109,12 @@ class arSearchResultExportCsvJob extends arBaseJob
       {
         $this->search->queryBool->addMust($criterias);
       }
+    }
+
+    // Add criteria for date range
+    if (null !== $criterias = SearchAdvancedAction::getDateRangeQuery($this->searchParams['sd'], $this->searchParams['ed']))
+    {
+      $this->search->queryBool->addMust($criterias);
     }
 
     // Set query if criteria were added
