@@ -2,3 +2,7 @@
 	path = atom2ckan
 	url = https://github.com/CENDARI/atom2ckan.git
 	branch = master
+[submodule "plugins/sfDariahShibUserPlugin"]
+	path = plugins/sfDariahShibUserPlugin
+	url = https://github.com/CENDARI/sfDariahShibUserPlugin.git
+	branch = master
