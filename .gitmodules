@@ -1,0 +1,4 @@
+[submodule "atom2ckan"]
+	path = atom2ckan
+	url = https://github.com/CENDARI/atom2ckan.git
+	branch = master
