@@ -6,3 +6,6 @@
 	path = plugins/sfDariahShibUserPlugin
 	url = https://github.com/CENDARI/sfDariahShibUserPlugin.git
 	branch = master
+[submodule "plugins/sfCendariThemePlugin"]
+	path = plugins/sfCendariThemePlugin
+	url = https://github.com/CENDARI/sfCendariThemePlugin.git
